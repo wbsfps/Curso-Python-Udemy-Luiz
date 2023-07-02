@@ -1,0 +1,5 @@
+nome = str(input("Informe seu nome: "))
+altura = float(input("Informe sua altura: "))
+peso = float(input("Informe seu peso em quilogramas:"))
+imc = peso / (altura ** 2)
+print(f"{nome} tem {altura} de altura, pesa {peso} quilos e seu IMC é {imc:1f}")
