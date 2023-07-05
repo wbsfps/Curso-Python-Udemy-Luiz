@@ -13,7 +13,7 @@
 # print('vio' not in nome)]
 
 nome = input("Informe seu nome: ")
-encontrar = input("Digite o que deseja entrar")
+encontrar = input("Digite o que deseja entrar: ").strip()
 if encontrar in nome:
     print(f'{encontrar} está em nome')
 else:
