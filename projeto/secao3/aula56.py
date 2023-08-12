@@ -3,7 +3,7 @@ split e join com list e str
 split - divide uma string
 join - une uma string
 """
-frase = 'Olhá só que, coisa interessante'
+frase = 'Olha só que, coisa interessante'
 lista_frases_cruas = frase.split(',')
 
 lista_frases = []
