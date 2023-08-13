@@ -28,9 +28,10 @@ lista_dos_numeros = []
 lista_da_soma_com_os_numeros_ja_multiplicados = []
 
 for i in range(1, 10):
-    numeros = input('Informe um número: ')
-    numeros_int = int(numeros)
-    
+    numeros_cpf = input('Informe um número: ')
+    numeros_int = int(numeros_cpf)
+    # if len(numeros_cpf) > 1:
+    #     break
     lista_dos_numeros.append(numeros_int)
     soma_dos_primeiros_digitos = sum(lista_dos_numeros)
 
