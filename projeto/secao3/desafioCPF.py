@@ -30,8 +30,10 @@ lista_da_soma_com_os_numeros_ja_multiplicados = []
 for i in range(1, 10):
     numeros_cpf = input('Informe um número: ')
     numeros_int = int(numeros_cpf)
-    # if len(numeros_cpf) > 1:
-    #     break
+
+    if len(numeros_cpf) > 1:
+        break
+    
     lista_dos_numeros.append(numeros_int)
     soma_dos_primeiros_digitos = sum(lista_dos_numeros)
 
@@ -47,11 +49,22 @@ multiplicando_nono_digito = lista_dos_numeros[8] * 2
 
 resultados = multiplicando_primeiro_digito, multiplicando_segundo_digito, multiplicando_terceiro_digito, multiplicando_quarto_digito, multiplicando_quinto_digito, multiplicando_sexto_digito, multiplicando_setimo_digito, multiplicando_oitavo_digito, multiplicando_nono_digito
 
+
 soma_dos_resultados = sum(resultados)
 
+multiplicando_soma_dos_resultados_por_dez = soma_dos_resultados * 10
+
+obter_resto_da_divisao = multiplicando_soma_dos_resultados_por_dez % 11
+
+if obter_resto_da_divisao > 9:
+    print('O resultado é zero')
+else:
+    print(obter_resto_da_divisao)
 
 # print(lista_dos_numeros)
 # print(soma_dos_primeiros_digitos)
 # print(multiplicando_primeiro_digito)
 # print(multiplicando_segundo_digito)
+print(multiplicando_soma_dos_resultados_por_dez)
 print(soma_dos_resultados)
+print(obter_resto_da_divisao)
