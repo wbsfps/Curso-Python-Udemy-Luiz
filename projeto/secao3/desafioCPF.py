@@ -33,7 +33,7 @@ for i in range(1, 10):
 
     if len(numeros_cpf) > 1:
         break
-    
+
     lista_dos_numeros.append(numeros_int)
     soma_dos_primeiros_digitos = sum(lista_dos_numeros)
 
@@ -56,15 +56,11 @@ multiplicando_soma_dos_resultados_por_dez = soma_dos_resultados * 10
 
 obter_resto_da_divisao = multiplicando_soma_dos_resultados_por_dez % 11
 
-if obter_resto_da_divisao > 9:
-    print('O resultado é zero')
-else:
-    print(obter_resto_da_divisao)
+digito = obter_resto_da_divisao
 
-# print(lista_dos_numeros)
-# print(soma_dos_primeiros_digitos)
-# print(multiplicando_primeiro_digito)
-# print(multiplicando_segundo_digito)
+digito = digito if digito <= 9 else 0
+
+print(soma_dos_primeiros_digitos)
 print(multiplicando_soma_dos_resultados_por_dez)
 print(soma_dos_resultados)
-print(obter_resto_da_divisao)
+print(digito)
