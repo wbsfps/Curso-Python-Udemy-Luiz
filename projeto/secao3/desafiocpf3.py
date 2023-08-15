@@ -25,7 +25,19 @@ contrário disso:
 O segundo dígito do CPF é 0
 """
 
-cpf_enviado_usuario = '74682489070'
+import re
+import sys
+# cpf_enviado_usuario = '746.824.890-70'.replace('.', '') \
+#     .replace('-', '') # o replace serve para trocar algo primeiro parâmetro o que você quer trocar 2º parâmetro o que você quer colocar no lugar
+
+entrada = input('CPF [746.824.890-70]: ')
+cpf_enviado_usuario = re.sub(r'[^0-9]', '', entrada)
+
+entrade_e_sequencial = entrada == entrada[0] * len(entrada)
+if entrade_e_sequencial:
+    print('Você enviou dados sequenciais')
+    sys.exit()
+
 nove_digitos = cpf_enviado_usuario[:9]
 contador_regressivo_1 = 10
 
