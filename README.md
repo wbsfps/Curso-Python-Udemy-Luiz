@@ -1,2 +1,2 @@
-# Curso-Python-Udemy-Luiz
- Curso Udemy
+# Curso de Python
+ Meus estudos sobre Python 
