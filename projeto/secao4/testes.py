@@ -56,10 +56,6 @@ print(multiplicador_string(10))
 # Questão 3
 # Funções Recursivas:
 # a) Defina uma função recursiva para calcular o fatorial de um número.
-def factorial (number):
 
-    total *= number
-    return total
-print(factorial(5))
 # b) Escreva uma função recursiva para calcular o N-ésimo termo da sequência de Fibonacci.
 # c) Implemente uma função recursiva para calcular o MDC (Máximo Divisor Comum) de dois números.
