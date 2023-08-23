@@ -1,5 +1,4 @@
 # Exercício - sistema de perguntas e respostas
-from time import *
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
