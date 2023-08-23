@@ -1,6 +1,9 @@
 # Questão 1
 # Funções Básicas:
 # a) Escreva uma função que calcule e retorne o quadrado de um número.
+import datetime
+
+
 def square(number):
     return number ** 2
 
