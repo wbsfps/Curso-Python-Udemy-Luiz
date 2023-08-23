@@ -70,7 +70,7 @@ print(multiplicador_string(10))
 
 def factorial(numero):
     total = 1
-    for num in range(2, numero + 1):
+    for num in range(1, numero + 1):
         total *= num
     return total
 
