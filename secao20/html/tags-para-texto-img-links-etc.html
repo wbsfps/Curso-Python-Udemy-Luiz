@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu html</title>
+    <style>
+        .img-in-text {
+            width: 55px;
+            height: 44px;
+        }
+
+        .vermelho {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cabeçalho</h1>
+    <p><strong>Lorem</strong> <b>ipsum</b> <i>dolor</i>, <em>sit</em>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank" rel="external">
+            <img class="img-in-text" src="https://th.bing.com/th/id/OIP.QJmDtsSyCtpLGjF0-2EzCAHaHa?pid=ImgDet&rs=1"
+                alt="Logo mdn"></a>
+        <del>vermelho</del> <ins>azul</ins>>, elit. Quia ipsa
+        libero, voluptates
+        <small>nisi</small> amet
+        2<sup>2</sup> = 4
+        H<sub>2</sub>O
+        <br>
+        <q cite="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics">listas</q> sit
+        nulla
+        <code> console.log </code>
+        natus in molestiae quae reiciendis provident delectus quod adipisci aperiam quidem harum perspiciatis.
+    </p>
+    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics">
+        <p>Aqui sim estou fazendo um bloco de citação</p>
+    </blockquote>
+    <pre>
+
+            <code> 
+def create_salutation(salutation):
+    def saudar(name):
+        return f'{salutation}, {name}!'
+    return saudar
+
+
+speak_bom_dia = create_salutation('Bom dia')
+speak_boa_noite = create_salutation('Boa noite')
+
+for nome in ['Maria', 'Joana', 'Luiz']:
+    print(speak_bom_dia(nome))
+    print(speak_boa_noite(nome))
+            </code>
+        
+    </pre>
+
+    <p><span class="vermelho">Lorem</span> ipsum dolor sit amet, <span class="vermelho">consectetur
+            adipisicingelit</span>. Tenetur, repellendus quas? Praesentium enim, laboriosam corporis, accusantium,
+        sintet
+    <div class="vermelho">Eu sou um bloco.</div>molestiae minima ipsam unde odio ex ullam? Repudiandae vel alias
+    molestias error?
+
+</body>
+
+</html>
+
+<!--
+    Site strong vs b: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong
+    
+    Qualificar links externos para o Google: https://developers.google.cn/search/docs/crawling-indexing/qualify-outbound-links?hl=pt-br
+    
+    Preferência em usar strong e em
+
+    target - O atributo "target" em HTML especifica onde abrir o documento vinculado por uma tag a (elemento de âncora)12. O valor do atributo pode ser "_blank", "_self", "_parent" ou "_top". 
+    "_blank" abre o documento vinculado em uma nova janela ou guia.
+    self - (usar para abrir as próprias páginas do meu site)
+
+    rel - informa que o link vai direcionar para outra página do prórprio site ou externo
+    next - (próxima página)
+    prev - (página anterior)
+    external - site externo
+    nofollow - (indica que é um link para um site não endossado, como um link pago) não dou o aval para aquele conteúdo
+--------------------------------------------------------------------------
+    Acidionando imagem - tag <img src='url-da-imagem ou colocar o aqruivo local' alt='aternativa caso a imagem não apareça(usei foto mdn acima)'>
+    picture - permite criar várias fontes, ou seja, permite diversificar o tamanho das imagens e se adapta em cada dispositivo
+    -----------------------------------------------------
+    source:media:type - media(vai server para colocar a largura máxima da imagem) / srcset - ele vai servir como como alternativa para colocar outra imagem como no exemplo acima caso a imagem ultrapasse 1050px rode a imagem foto-m.png / type - indentifica o type de arquivo
+    ------------------------------------------------------
+    audio - adiciona um audio / src - fonte do audio precisa do autoplay para o audio tocar e também tem o parâmetro controls para controlar o áudio(maneira simples)
+    Para audio diferentemente de imagens para diferenciar os tipos de áudio mp3, ogg o source é source:src
+----------------------------------------------------------------
+Maneira complexa 
+    <audio>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-44.ogg" type="audio/ogg">
+        <source src="midia/guanacast-55.wav" type='audio/wav'>
+    </audio>
+
+O  atributo  preload  indica  se  o  áudio  será  pré-carregado  ou  não  e  aceita  três 
+valores: 
+๏ metadata  vai  carregar  apenas  as  informações  sobre  o  arquivo  (tamanho, 
+tempo, informações de direitos, etc) 
+๏ none não vai carregar absolutamente nada até que o usuário clique no botão 
+play ou um script inicie a reprodução 
+๏ auto (padrão) vai carregar o arquivo de áudio inteiro assim que a página for 
+carregada, mesmo que o usuário nunca aperte o play
+loop - quando o áudio terminar o áudio recomeça
+
+video - também aceita controls, autoplay como o áudio
+    Da para utilizar o parâmetro width para informar a largura
+    poster - é para "informar uma tumb"
+    O source para utilizar em vídeo é o source:src o mesmo do áudio
+    A ORDEM TEM TOTAL INFLUÊNCIA(nos sources)
+    Explicar para o cliente caso ele queira vídeos hospedados no site pesa muito no bolso por trazer muito tráfego de dados tomar cuidado
+
+-------------------------------------------
+A ORDEM TEM TOTAL INFLUÊNCIA(nos sources)
+--------------------------------------------------------------------------
+
+    del - risca a palavra /  Use o elemento <s> para representar texto que não sejam relevante ou que não estam corretos.
+    ins - inseri a palavra / <u> - underline
+    
+    small - texto pequeno
+
+    <sup> - eleva uma letra ou número ex: 2^2
+    <sub> - abaixa uma letra ou número ex: H O
+                                            2
+    <q cite="geralmente coloca link de sites externos aqui no cite"> - aquele trecho fica entre aspas, ou seja, uma citação
+    <blockquote> - bloco para a citação
+    
+    <br> - quebra linha
+    <hr> - adiciona uma linha horizontal
+    <code> - adicionar um código
+
+    pre - organiza o código com identação  (usar shift + tab para recuar as linhas)
+    abbr - abreviação
+    bdo - texto invertido
+
+    O elemento HTML <span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ), ou para compartilhar valores de atributos como lang.
+-->
