@@ -44,6 +44,7 @@ def exibir(lista):
 l1 = sorted(lista, key=lambda item: item['nome'])
 l2 = sorted(lista, key=lambda item: item['sobrenome'])
 
+# a key é uma função que nela precisa ser passada uma função(como se fosse uma função anônima)
 
 exibir(l1)
 exibir(l2)
