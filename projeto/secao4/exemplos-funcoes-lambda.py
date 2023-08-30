@@ -25,3 +25,6 @@ print(exec(lambda x, y: x+y, 2, 3),
       )
 
 print(exec(lambda *args: sum(args), 1, 2, 32, 3, 23, 23, 2))
+
+double = create_multiplier(2)
+print(double(4))
