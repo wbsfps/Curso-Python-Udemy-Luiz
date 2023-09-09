@@ -135,3 +135,14 @@ persons = [
 #     print(list, find_first_duplicate(list))
 
 
+list_persons = [
+    {'name': 'William', 'age': 18, 'height': 1.74, },
+    {'name': 'Kaio', 'age': 18, 'height': 1.76, },
+    {'name': 'Lyra', 'age': 22, 'height': 1.82, }
+]
+
+check_names = [{
+    {**name, 'name': list_persons['Augusto']}
+    for name in list_persons
+}]
+print(*check_names, sep='\n')
