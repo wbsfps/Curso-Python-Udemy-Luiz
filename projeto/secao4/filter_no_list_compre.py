@@ -31,3 +31,9 @@ news_products = [
     if (product['price'] >= 20 and product['price'] * 1.05) > 10
 ]
 p(news_products)
+
+# Mapeamento quer dizer que eu estou pegando um dado.
+# E jogando numa outra lista
+# E essas duas listas tem o mesmo tamanho
+
+# Filtro quer dizer que eu posso ou não incluir aquele elemento na lista
