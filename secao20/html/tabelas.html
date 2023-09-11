@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="css/style-tabela.css">
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="responsive-table"> <!-- adaptando para a tela de um celular (verificar o css)-->
+        <table>
+            <caption>Uma descrição para a tabela</caption>
+            <thead>
+                <tr> <!--linha-->
+                    <th>Título 1</th> <!-- coluna -->
+                    <th>Título 2</th> <!-- coluna -->
+                    <th>Título 3</th> <!-- coluna -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1Corpo 1Corpo 1Corpo 1Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Aqui</td> <!-- Colocando uma linha para duas colunas  e duas linhas
+                    -->
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total: </td>
+                </tr>
+                <tr>
+                    <td>R$ 555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Para linhas utiliza tr
+    Para colunas utiliza td ou th
+-->
