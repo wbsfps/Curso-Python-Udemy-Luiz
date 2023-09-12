@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset label {
+            margin: 5px;
+            display: inline;
+            margin: auto;
+        }
+
+        fieldset input {
+            display: inline;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <section>
+        <h2>Descrição</h2>
+        <form action="#">
+            <p>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="username" placeholder="Informe seu nome"> <br>
+                <label for="adress">Endereço: </label>
+                <input type="text" id="adress" name="adress" placeholder="Informe seu endereço"> <br>
+                <label for="city">Cidade: </label>
+                <input type="text" name="city" id="city" placeholder="Informe sua cidade"> <br>
+                <label for="state">Estado: </label>
+                <select name="select" id="select">
+                    <optgroup label="north_east">
+                        <option value="sergipe">Sergipe</option>
+                        <option value="bahia">Bahia</option>
+                    </optgroup>
+                    <optgroup label="south">
+                        <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+                        <option value="parana">Paraná</option>
+                    </optgroup>
+                </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados profissionais</legend>
+
+                <p>
+                    Natureza de cargo <br>
+                    <input type="radio" name="management" id="manager" checked value="manager">
+                    <label for="manager">Gerência</label>
+                    <input type="radio" name="management" id="financial" value="financial">
+                    <label for="financial">Financeiro</label>
+                    <input type="radio" name="management" id="front_desk" value="front_desk">
+                    <label for="front_desk">Recepção</label>
+                    <input type="radio" name="management" id="administrative" value="administrative">
+                    <label for="administrative">Administrativo</label>
+                    <input type="radio" id="legal" name="management" id="legal" value="legal">
+                    <label for="legal">Jurídico</label>
+
+                    <br> <br>
+
+                    Área de interesse <br>
+                    <input type="checkbox" name="area_of_interest" id="computing" value="computing">
+                    <label for="computing">Computação</label>
+                    <input type="checkbox" name="area_of_interest" id="biology" value="biology">
+                    <label for="biology">Biologia</label>
+                    <input type="checkbox" name="area_of_interest" id="environment" value="environment">
+                    <label for="environment">Meio Ambiente</label>
+                    <input type="checkbox" name="area_of_interest" id="engineering" value="engineering">
+                    <label for="engineering">Engenharia</label>
+                    <input type="checkbox" name="area_of_interest" id="history" value="history">
+                    <label for="history">História</label>
+                    <br>
+                    <br>
+                    <label for="">Mini-currículo: <textarea name="text-area" id="curriculum" cols="30"
+                            rows="10"></textarea></label>
+                </p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
