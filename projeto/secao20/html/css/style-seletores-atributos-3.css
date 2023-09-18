@@ -1,0 +1,9 @@
+/* se o valor começar com qualquer coisa ele será estilizado*/
+[meu-atributo ^="comecou"] {
+    color: red;
+}
+
+/*se ele terminar*/
+[meu-atributo $="llll"] {
+    color: purple;
+}

@@ -1,0 +1,4 @@
+/*verifica se os valores estão separados por traço , o valor com o traço precisa ser primeiro elemento*/
+[meu-atributo|="valor"] {
+    color: red;
+}

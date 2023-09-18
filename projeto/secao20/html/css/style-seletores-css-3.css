@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* exemplo de uma classe mãe - (neste exemplo ela pede que todo elemento que estiver dentro de main-content com a classe heading fique em itálico e com cor red)
+*/
+
+.main-content .heading {
+    font-style: italic;
+    color: red;
+}
+
+/*Apenas selecionando apenas o h2*/
+/* .main-content h2.heading {
+    font-style: italic;
+    color: red;
+} */
+
+/*Apenas selecionando apenas o h2 dentro da div main-content*/
+/* div.main-content h2.heading {
+    font-style: italic;
+    color: red;
+} */
+
+/* body div.main-content h2.heading {
+    font-style: italic;
+    color: red;
+} */
+
+/* body.error div.main-content h2.heading {
+    font-style: italic;
+    color: red;
+} */

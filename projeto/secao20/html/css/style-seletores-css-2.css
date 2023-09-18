@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-red {
+    color: red;
+    padding: 5px;
+}
+
+/* exemplo de uma classe mãe - (neste exemplo ela pede que todos os h2 dentro da classe main-content tenha o estilo itálico)*/
+.main-content h2 {
+    font-style: italic;
+}

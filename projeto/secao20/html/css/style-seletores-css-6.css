@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* seletor de irmaos*/
+/* explicando... para a classe pai com um h1 o p mais próximo à ele será selecionado com o sinal de +*/
+.pai h1+p {
+    color: red;
+}
+
+/*explicando... o h1 mais próximo de um p será estilizado*/
+.pai p+h1 {
+    color: blue;
+}
+
+/* todos os p's serão estilizados depois de um h1*/
+/* .pai h1~p {
+    color: blue;
+} */

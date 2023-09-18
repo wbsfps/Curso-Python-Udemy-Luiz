@@ -1,0 +1,19 @@
+/* Selecionando todos os elementos da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* por tag*/
+
+h2,
+p {
+    color: purple;
+}
+
+/* bastante especifico*/
+
+body div section p,
+body div section h2 {
+    color: blue;
+}
