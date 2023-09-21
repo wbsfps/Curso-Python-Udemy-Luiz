@@ -133,3 +133,24 @@ persons = [
 
 # for list in lista_de_listas_de_inteiros:
 #     print(list, find_first_duplicate(list))
+
+
+def gen1(n=0):
+    yield 1
+    yield 2
+    print('continua...')
+    return n
+
+
+def gen2(gen):
+    yield from gen()
+    yield 3
+    yield 4
+    return 'acabou'
+
+
+g1 = gen1()
+g2 = gen2(gen1)
+
+for n in g2:
+    print(n)
