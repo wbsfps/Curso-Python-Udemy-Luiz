@@ -135,22 +135,28 @@ persons = [
 #     print(list, find_first_duplicate(list))
 
 
-def gen1(n=0):
+def gen1():
+    print('iniciou')
     yield 1
-    yield 2
-    print('continua...')
-    return n
+    yield 1 * 10
+    yield 1 * 20
+    print('acabou')
 
 
 def gen2(gen):
-    yield from gen()
-    yield 3
-    yield 4
-    return 'acabou'
+    print('iniciou g2')
+    yield from gen
+    yield 40
+    print('acabou g2')
 
 
-g1 = gen1()
-g2 = gen2(gen1)
+g1 = gen1
+g2 = gen2(g1())
 
-for n in g2:
-    print(n)
+for number in g1():
+    print(number)
+print()
+
+for number in g2:
+    print(number)
+print()
