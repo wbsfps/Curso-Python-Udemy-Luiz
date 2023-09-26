@@ -1,6 +1,8 @@
 # try, except, else e finally
 # Parte 3
+
 # https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
+
 # O try e finally sempre serão executados
 
 try:
