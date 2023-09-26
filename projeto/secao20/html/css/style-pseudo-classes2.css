@@ -1,0 +1,11 @@
+.pai .lista li:first-child {
+    background-color: red;
+}
+
+.pai .lista li:last-child {
+    background-color: red;
+}
+
+input:required {
+    background: #f00;
+}

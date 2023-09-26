@@ -1,0 +1,72 @@
+p:not(.meio) {
+    color: blue;
+}
+
+* {
+    margin: 0;
+}
+
+.heading {
+    transition: all 300ms ease-in-out;
+}
+
+/* mouse sobre um elemento*/
+.heading:hover {
+    background: #ff0000;
+}
+
+a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+/* link nunca visitado*/
+a:link {
+    color: #ff1493;
+}
+
+/* link já visitado*/
+a:visited {
+    color: #b22222;
+}
+
+a:hover {
+    background-color: #483d8b;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* aquele elemento é clicável*/
+a:active {
+    background-color: #2f4f4f;
+    color: #fff;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+input:checked+p {
+    background: red;
+}
+
+input:not(:checked)+p {
+    background: yellow;
+}
+
+/* input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid #000;
+}
+
+input:disabled {
+    background-color: #663399;
+    cursor: not-allowed;
+} */
+
+/* input:enabled {
+    background-color: #663399;
+    cursor: not-allowed;
+} */
