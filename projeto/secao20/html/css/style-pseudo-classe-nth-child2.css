@@ -1,0 +1,24 @@
+/* Vai focar em apenas em 1 indice, ou seja, no exemplo abaixo foca no 2*/
+p:nth-child(2) {
+    color: #f00;
+}
+
+/* Somente nos pares*/
+p:nth-child(even) {
+    color: #f00;
+}
+
+/* Somente nos impares*/
+p:nth-child(odd) {
+    color: #00f;
+}
+
+/* Somente nos multiplos de 3 */
+p:nth-child(3n) {
+    background-color: black;
+}
+
+/* Somente nos multiplos de a partir do quinto elemento vai de 3 em 3 */
+p:nth-child(3n+5) {
+    background-color: #dfdfdf;
+}
