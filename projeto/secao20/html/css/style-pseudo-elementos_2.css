@@ -1,0 +1,30 @@
+/* A primeira linha do <p> receberá esses estilos */
+p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* A primeira linha do <p> receberá esses estilos */
+p::first-line {
+    text-decoration: underline;
+    color: red;
+}
+
+p:not()
+
+/* O que selecionar receberá esses estilos */
+p::selection {
+    background: black;
+    color: white;
+}
+
+input::placeholder {
+    background: black;
+    color: blue;
+}

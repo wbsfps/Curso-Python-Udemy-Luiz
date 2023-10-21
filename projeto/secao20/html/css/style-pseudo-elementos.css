@@ -1,0 +1,17 @@
+/* Depois da tag li aparece o - */
+ul li::after {
+    content: ' - ';
+    background-color: red;
+    color: #fff;
+    display: block;
+}
+
+/* Pseudo-classe :: Pseudo-elementos : */
+
+/* antes da tag li aparece o - */
+ul li::before {
+    content: ' - ';
+    background-color: #00f;
+    color: #f00;
+    display: block;
+}
