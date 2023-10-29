@@ -5,13 +5,17 @@
 # usar as funções decoradoras em outras funções.
 
 def create_function(func):
+
     def intern(*args, **kwargs):
         print('Vou te decorar')
+
         for arg in args:
             is_string(arg)
+
         result = func(*args, **kwargs)
         print(f'O seu resultado foi {result}')
         print('Ok, você foi decorado!')
+
         return result
 
     return intern
