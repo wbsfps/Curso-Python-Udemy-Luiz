@@ -8,7 +8,13 @@ ID   Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
 2    1                                    2
 Quando maior especificidade ela será priorizada
 
+Regras de aplicação:
+
+Style
+Especificidade
+Empate
 !important
+
 */
 
 #p {
