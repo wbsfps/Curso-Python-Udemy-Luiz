@@ -1,0 +1,48 @@
+/* 
+ID   Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+1    0                                    0
+0    1                                    0
+1    1                                    0
+1    1                                    1
+2    1                                    1
+2    1                                    2
+Quando maior especificidade ela será priorizada
+
+!important
+*/
+
+#p {
+    background: #f00;
+}
+
+.p {
+    background: #ff0;
+}
+
+/* 
+
+#p.p {
+    background: #ff0;
+} 
+
+   p#p {
+    background: #ff0;
+} 
+
+#body p#p.p {
+    background: #f00;
+}
+
+body#body p#p.p {
+    background: purple;
+}
+
+body#body.bclass p#p.p {
+    background: aquamarine;
+}
+
+body#body.bclass p#p.p::selection:hover {
+    background: pink;
+}
+
+*/
