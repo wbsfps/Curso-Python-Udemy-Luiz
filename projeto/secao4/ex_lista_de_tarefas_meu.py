@@ -9,6 +9,7 @@
 # refazer = todo ['fazer café']
 # refazer = todo ['fazer café', 'caminhar']
 import os
+import json
 
 options = ["listar", "desfazer", "refazer"]
 tasks = []
@@ -29,9 +30,10 @@ def undo():
         print("Nada para desfazer")
     return tasks
 
-def redo(item):
+def redo():
     if undone_tasks:
-        tasks.append(item)
+        restored_item = undone_tasks.pop()
+        tasks.append(restored_item)
     else:
         print("Nada para refazer")
     return tasks
@@ -57,4 +59,6 @@ while True:
     
     exit = input("Deseja sair? (s/n): ").lower().strip()
     if exit == "s".lower().strip():
+        with open("./projeto/secao4/tasks.json", "w", encoding="utf-8") as file:
+            json.dump(tasks, file, indent=2, ensure_ascii=False)
         break
